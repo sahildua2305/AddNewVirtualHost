@@ -24,3 +24,10 @@ Here, `project-folder-name` is the name of the project folder in `/var/www/html/
 Once you have the script, you can run it everytime you want to create a new virtual host as shown below:
 
     $ bash add-site-localhost.sh project-folder-name project-url
+
+
+Notes:
+
+1. Script works for Ubuntu machine only.
+2. Make sure port 80 is open.
+
