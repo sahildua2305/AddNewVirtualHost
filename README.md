@@ -31,3 +31,16 @@ Notes:
 1. Script works for Ubuntu machine only.
 2. Make sure port 80 is open.
 
+---
+
+### Behind the scene
+
+The script will create a new virtual host with the given `project-url` and link it with the `project-folder-name` given as arguments while running the script.
+
+##### The script does the following things:
+
+* Creates configuration file for the new virtual host in `/etc/apache2/sites-available` folder
+* Enables the newly added configuration file for the new virtual host
+* Reloads apache2 service
+* Adds the new virtual host URL to `/etc/hosts`
+* Restarts apache2 service
