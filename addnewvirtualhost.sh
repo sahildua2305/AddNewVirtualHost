@@ -11,8 +11,7 @@ sudo cat <<EOF >/etc/apache2/sites-available/$1.conf
 DocumentRoot "/var/www/html/$1/"
 ServerName $2
 <Directory "/var/www/html/$1/">
-allow from all
-order allow,deny
+Require all granted
 # Enables .htaccess files for this site
 AllowOverride All
 </Directory>
